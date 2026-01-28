@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://caex.earth/seo/sitemap.xml
