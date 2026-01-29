@@ -2,19 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>CAEX | About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="About CAEX – independent carbon and environmental expertise.">
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAEX | Carbon & Environmental Expertise</title>
+  <meta name="description" content="CAEX is an independent carbon and environmental consulting firm supporting high-integrity climate action worldwide." />
+  <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121824;
+      --text: #e6e8eb;
+      --muted: #a0a6ad;
+      --accent: #2fbf71;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: var(--panel);
+      padding: 1.5rem 2rem;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 42px;
+    }
+
+    nav a {
+      color: var(--muted);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    h1, h2, h3 {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-top: 4rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: var(--panel);
+      padding: 2rem;
+      border-radius: 6px;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <img src="assets/images/logo-caex.svg" alt="CAEX logo">
+  <img src="assets/logo-caex.svg" alt="CAEX logo">
   <nav>
     <a href="services.html">Services</a>
     <a href="news.html">News</a>
@@ -27,21 +116,30 @@
   <h1>About CAEX</h1>
 
   <p>
-    <!-- INSERT COMPANY DESCRIPTION, EXPERIENCE, POSITIONING -->
+    CAEX is an independent carbon and environmental consulting firm focused on delivering
+    technically robust and credible solutions for climate-related initiatives worldwide.
   </p>
 
-  <p>
-    <!-- INSERT VALUES, INDEPENDENCE, MARKET INTEGRITY -->
-  </p>
+  <section>
+    <h2>Our Approach</h2>
+    <p>
+      We combine deep technical expertise with practical understanding of regulatory frameworks
+      and carbon markets, prioritizing integrity, transparency, and alignment with best practices.
+    </p>
+  </section>
 
-  <!-- OPTIONAL IMAGE -->
-  <!-- Recommended size: 1200x800 -->
+  <section>
+    <h2>Experience & Expertise</h2>
+    <p>
+      Our work spans international carbon standards, regulatory mechanisms,
+      and institutional climate frameworks.
+    </p>
+  </section>
 </main>
 
 <footer>
-  <p><a href="contact.html">Professional contact form</a></p>
-  <p><!-- INSERT COMPANY DETAILS --></p>
-  <p>© CAEX</p>
+  © CAEX — Carbon & Environmental Expertise ·
+  <a href="contact.html">Contact</a>
 </footer>
 
 </body>

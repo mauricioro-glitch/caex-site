@@ -2,19 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>CAEX | News & Updates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Carbon market news, regulatory updates, and methodological developments.">
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAEX | Carbon & Environmental Expertise</title>
+  <meta name="description" content="CAEX is an independent carbon and environmental consulting firm supporting high-integrity climate action worldwide." />
+  <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+:root {
+  --bg: #0b0f14;
+  --panel: #121824;
+  --text: #e6e8eb;
+  --muted: #a0a6ad;
+  --accent: #2fbf71;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Inter, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+/* ======================
+   LINKS (GLOBAL)
+====================== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======================
+   HEADER & NAV
+====================== */
+header {
+  background: var(--panel);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 42px;
+}
+
+/* Menu padrão */
+nav a {
+  color: var(--muted);
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Página ativa */
+nav a.active {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ======================
+   LAYOUT
+====================== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--muted);
+  max-width: 820px;
+}
+
+/* ======================
+   GRID & CARDS
+====================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--panel);
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+/* ======================
+   LISTAS
+====================== */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+}
+
+/* ======================
+   FOOTER
+====================== */
+footer {
+  background: var(--panel);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+footer a {
+  color: var(--accent);
+}
+
+  </style>
 </head>
 
 <body>
 
 <header>
-  <img src="assets/images/logo-caex.svg" alt="CAEX logo">
+  <img src="assets/logo-caex.svg" alt="CAEX logo">
   <nav>
     <a href="services.html">Services</a>
     <a href="news.html">News</a>
@@ -27,29 +178,26 @@
   <h1>News & Updates</h1>
 
   <p>
-    Insights, regulatory updates, and relevant developments in voluntary and compliance carbon markets.
+    Technical insights, regulatory developments, and perspectives on carbon markets and climate policy.
   </p>
 
-  <!-- NEWS ITEM -->
-  <div class="news-card">
-    <h3>Title of the news item</h3>
-    <p>
-      Short summary of the news for SEO purposes.
-    </p>
-    <a href="#">Read more</a>
-  </div>
+  <section class="grid">
+    <div class="card">
+      <h3>[News Title]</h3>
+      <p><small>Published on [Date]</small></p>
+      <p>
+        Short summary of the update. This text should be optimized for search engines.
+      </p>
+      <a href="#">Read more →</a>
+    </div>
 
-  <!-- COPY THIS BLOCK FOR EACH NEW ITEM -->
-
-  <!-- OPTIONAL IMAGE -->
-  <!-- Recommended size: 1200x630 -->
-  <!-- <img src="assets/images/news-placeholder.jpg" class="responsive" alt="Carbon market news"> -->
+    <!-- Duplicate cards for new posts -->
+  </section>
 </main>
 
 <footer>
-  <p><a href="contact.html">Professional contact form</a></p>
-  <p><!-- INSERT COMPANY DETAILS --></p>
-  <p>© CAEX</p>
+  © CAEX — Carbon & Environmental Expertise ·
+  <a href="contact.html">Contact</a>
 </footer>
 
 </body>
